@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Your Idea | Test Before You Invest</title>
+<meta name="description" content="Validate your business idea before committing significant time, money and resources. Structured business concept development and validation coaching.">
+<style>
+:root{
+  --navy:#10233f; --blue:#1d5fa7; --orange:#f47b35; --cream:#f7f5ef;
+  --ink:#172033; --muted:#657085; --white:#fff; --line:#dfe5ec;
+  --shadow:0 18px 50px rgba(16,35,63,.10); --radius:22px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(223,229,236,.8)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--navy)}
+.brand-mark{width:42px;height:42px;border-radius:11px;background:var(--navy);display:grid;place-items:center}
+.brand-mark svg{width:30px;height:30px}.brand span{font-size:16px;line-height:1.05}.brand small{display:block;font-size:10px;color:var(--muted);font-weight:600;margin-top:3px}
+.navlinks{display:flex;gap:28px;font-size:14px;font-weight:700;color:#445168}.navlinks a:hover{color:var(--orange)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 21px;border-radius:12px;font-weight:800;font-size:14px;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--orange);color:#fff;box-shadow:0 8px 22px rgba(244,123,53,.25)}.btn-primary:hover{transform:translateY(-1px)}
+.btn-dark{background:var(--navy);color:#fff}.btn-outline{border-color:#cfd8e4;background:#fff;color:var(--navy)}
+.hero{background:linear-gradient(135deg,#f8f7f2 0%,#eef4fa 100%);padding:88px 0 78px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.eyebrow{display:inline-flex;padding:7px 11px;border-radius:99px;background:#e7f0fa;color:var(--blue);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(44px,6vw,72px);line-height:1.02;letter-spacing:-.045em;margin:18px 0;color:var(--navy)}
+.hero p{font-size:20px;max-width:650px;color:#536077;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;font-size:13px;color:#5f6b7d;font-weight:700}
+.trust span:before{content:"✓";color:var(--orange);margin-right:7px;font-weight:900}
+.visual{background:#fff;border:1px solid #e2e7ed;border-radius:28px;padding:26px;box-shadow:var(--shadow);position:relative}
+.visual-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.visual-title{font-weight:900;color:var(--navy)}
+.badge{font-size:11px;font-weight:900;padding:7px 9px;border-radius:99px;background:#edf7ef;color:#32824a}
+.process-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mini-card{padding:15px;border:1px solid var(--line);border-radius:15px;background:#fbfcfd}.mini-card b{display:block;color:var(--navy);font-size:13px}.mini-card span{font-size:11px;color:var(--muted)}
+.score{margin-top:12px;padding:18px;border-radius:17px;background:var(--navy);color:#fff}.scoreline{display:flex;justify-content:space-between;font-size:12px;font-weight:800}.bar{height:8px;background:#344a69;border-radius:99px;margin-top:10px;overflow:hidden}.bar i{display:block;height:100%;width:76%;background:var(--orange);border-radius:99px}
+section{padding:92px 0}.light{background:var(--cream)}.blue{background:var(--navy);color:#fff}
+.section-head{max-width:720px;margin-bottom:42px}.kicker{color:var(--orange);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.12em}.section-head h2{font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.035em;margin:9px 0 14px;color:var(--navy)}.blue h2{color:#fff}.section-head p{color:var(--muted);font-size:17px}.blue .section-head p{color:#bdc9da}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.problem{padding:25px;border:1px solid var(--line);border-radius:18px;background:#fff}.problem strong{display:block;font-size:18px;color:var(--navy);margin-bottom:7px}.problem p{margin:0;color:var(--muted);font-size:14px}
+.quote{padding:34px;border-radius:22px;background:var(--navy);color:#fff;margin-top:28px;font-size:25px;font-weight:800;line-height:1.3}.quote em{color:#ffb07f;font-style:normal}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:26px;background:#fff;border:1px solid var(--line);border-radius:20px;min-height:210px}.num{font-size:12px;font-weight:900;color:var(--orange);letter-spacing:.1em}.step h3{margin:10px 0 8px;color:var(--navy);font-size:20px}.step p{margin:0;color:var(--muted);font-size:14px}
+.outcomes{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.outcome{padding:18px 20px;border:1px solid #29405f;border-radius:16px;background:#162b48}.outcome b{display:block;color:#fff}.outcome span{font-size:13px;color:#bdc9da}
+.audience{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.aud{padding:28px;border-radius:20px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 28px rgba(16,35,63,.05)}.aud .icon{font-size:25px}.aud h3{color:var(--navy);margin:10px 0 6px}.aud p{color:var(--muted);font-size:14px;margin:0}
+.final{padding:96px 0;background:linear-gradient(135deg,#10233f,#1d5fa7);color:#fff;text-align:center}.final h2{font-size:clamp(36px,5vw,58px);line-height:1.05;margin:0 auto 15px;letter-spacing:-.04em}.final p{max-width:650px;margin:0 auto 28px;color:#dbe5f1;font-size:18px}
+footer{padding:34px 0;background:#0b192d;color:#aeb9c9;font-size:13px}.footer{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer strong{color:#fff}
+.modal{display:none;position:fixed;inset:0;background:rgba(4,12,24,.65);z-index:50;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modalbox{background:#fff;border-radius:22px;padding:30px;max-width:560px;width:100%;box-shadow:0 30px 80px rgba(0,0,0,.25)}.modalbox h3{margin-top:0;color:var(--navy);font-size:27px}.close{float:right;border:0;background:none;font-size:26px;cursor:pointer}.field{margin:12px 0}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:5px}.field input,.field textarea{width:100%;padding:12px;border:1px solid #ccd5df;border-radius:10px;font:inherit}.field textarea{min-height:110px}
+@media(max-width:850px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr;gap:35px}.steps,.audience{grid-template-columns:1fr 1fr}.problem-grid{grid-template-columns:1fr}.hero{padding-top:60px}}
+@media(max-width:560px){section{padding:68px 0}.steps,.audience,.outcomes{grid-template-columns:1fr}.process-mini{grid-template-columns:1fr 1fr}.nav .btn{display:none}.hero p{font-size:17px}h1{font-size:46px}.footer{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Validate Your Idea home">
+      <div class="brand-mark">
+        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect x="7" y="6" width="19" height="25" rx="2" stroke="#f47b35" stroke-width="2.5"/>
+          <path d="M11 12h11M11 17h8M11 22h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="29" cy="25" r="8" fill="#1d5fa7" stroke="#fff" stroke-width="2"/>
+          <path d="M26 25l2 2 4-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>Validate Your Idea<small>Business Idea Validation</small></div>
+    </a>
+    <div class="navlinks">
+      <a href="#process">Process</a><a href="#outcomes">What You Get</a><a href="#audience">Who It's For</a><a href="#about">About</a>
+    </div>
+    <a class="btn btn-primary" href="#contact">Start Validating</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Business Idea Validation Coaching</span>
+      <h1>Have a business idea?<br><span style="color:var(--orange)">Test it before you invest.</span></h1>
+      <p>I help early-stage entrepreneurs examine their market, customers, competition, assumptions, costs and risks—so they can make an informed decision before committing significant time and money.</p>
+      <div class="actions"><a class="btn btn-primary" href="#contact">Validate My Idea →</a><a class="btn btn-outline" href="#process">See the Process</a></div>
+      <div class="trust"><span>Evidence-led</span><span>Structured process</span><span>Go / Refine / No-Go</span></div>
+    </div>
+    <div class="visual">
+      <div class="visual-top"><div class="visual-title">Concept Validation</div><div class="badge">IN PROGRESS</div></div>
+      <div class="process-mini">
+        <div class="mini-card"><b>01 Feasibility</b><span>Market & competition</span></div>
+        <div class="mini-card"><b>02 Assumptions</b><span>Risk & testing</span></div>
+        <div class="mini-card"><b>03 Ideation</b><span>Costs & operations</span></div>
+        <div class="mini-card"><b>04 Prototype</b><span>Feedback & iteration</span></div>
+        <div class="mini-card"><b>05 Critique</b><span>Challenge the concept</span></div>
+        <div class="mini-card"><b>06 Viability</b><span>Decision criteria</span></div>
+      </div>
+      <div class="score"><div class="scoreline"><span>Evidence strength</span><span>76%</span></div><div class="bar"><i></i></div><div style="font-size:11px;color:#c8d3e1;margin-top:8px">Turn uncertainty into evidence before committing more resources.</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head"><span class="kicker">The problem</span><h2>A good idea isn't enough.</h2><p>Entrepreneurs often make decisions while critical assumptions are still untested. The purpose of validation is not to prove that an idea is good—it is to discover what must be true for the idea to work.</p></div>
+    <div class="problem-grid">
+      <div class="problem"><strong>Is there a real market?</strong><p>Identify demand, customer needs, market conditions and relevant trends.</p></div>
+      <div class="problem"><strong>Who will actually buy?</strong><p>Challenge assumptions about customers, value and willingness to pay.</p></div>
+      <div class="problem"><strong>Can the business work?</strong><p>Explore costs, operations, resources, partnerships and potential roadblocks.</p></div>
+      <div class="problem"><strong>What could make it fail?</strong><p>Expose risks, objections and deal-breakers before they become expensive.</p></div>
+    </div>
+    <div class="quote">“The goal isn't to prove your idea is good. <em>The goal is to find out what the evidence says.</em>”</div>
+  </div>
+</section>
+
+<section id="process" class="light">
+  <div class="container">
+    <div class="section-head"><span class="kicker">The methodology</span><h2>A structured six-phase validation process.</h2><p>Move from an early-stage idea toward a clearer, tested and defensible business concept.</p></div>
+    <div class="steps">
+      <div class="step"><span class="num">01 — FEASIBILITY</span><h3>High-Level Feasibility Analysis</h3><p>Examine market demand, competition, technology readiness, legal and regulatory obligations, and trends.</p></div>
+      <div class="step"><span class="num">02 — ASSUMPTIONS</span><h3>Assumption Validation</h3><p>Identify assumptions, prioritise risk, design low-cost validation tests and evolve the concept from evidence.</p></div>
+      <div class="step"><span class="num">03 — IDEATION</span><h3>Detailed Ideation</h3><p>Model financial requirements, operations, resources, partnerships and potential roadblocks.</p></div>
+      <div class="step"><span class="num">04 — PROTOTYPE</span><h3>Conceptual Prototyping</h3><p>Develop the concept, communicate the proposition, gather external feedback and iterate.</p></div>
+      <div class="step"><span class="num">05 — CRITIQUE</span><h3>Idea Critique & Defence</h3><p>Identify objections, develop evidence-based responses and prepare to defend the concept with confidence.</p></div>
+      <div class="step"><span class="num">06 — VIABILITY</span><h3>Viability Criteria</h3><p>Define requirements and deal-breakers, review the findings objectively and determine the next decision.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="outcomes" class="blue">
+  <div class="container">
+    <div class="section-head"><span class="kicker">The outcome</span><h2>Know what to do next.</h2><p>Validation is valuable whether the answer is yes, not yet, or no.</p></div>
+    <div class="outcomes">
+      <div class="outcome"><b>✓ Clearer business concept</b><span>Define the proposition and what needs to be true for it to work.</span></div>
+      <div class="outcome"><b>✓ Key assumptions identified</b><span>Know which beliefs create the greatest risk.</span></div>
+      <div class="outcome"><b>✓ Market & competition insight</b><span>Understand the external environment around the opportunity.</span></div>
+      <div class="outcome"><b>✓ Validation findings</b><span>Use practical tests and feedback to challenge uncertainty.</span></div>
+      <div class="outcome"><b>✓ Financial & operational picture</b><span>Explore resources, costs, activities and pressure points.</span></div>
+      <div class="outcome"><b>✓ Risk & objection analysis</b><span>Pressure-test the concept before significant commitment.</span></div>
+      <div class="outcome"><b>✓ Viability criteria</b><span>Define the conditions and deal-breakers that matter.</span></div>
+      <div class="outcome"><b>✓ Go / Refine / No-Go direction</b><span>Make a more informed decision about what happens next.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="audience">
+  <div class="container">
+    <div class="section-head"><span class="kicker">Who it's for</span><h2>Built for people at the idea stage.</h2><p>Whether you're considering a venture, preparing to launch or rethinking an existing concept.</p></div>
+    <div class="audience">
+      <div class="aud"><div class="icon">◈</div><h3>I have an idea</h3><p>You have a business concept but don't know whether it is worth pursuing.</p></div>
+      <div class="aud"><div class="icon">↗</div><h3>I'm preparing to launch</h3><p>You've started developing the venture and want to test the concept before going further.</p></div>
+      <div class="aud"><div class="icon">⟳</div><h3>I need to rethink</h3><p>You have a concept but want to identify weaknesses, risks and opportunities for improvement.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="light">
+  <div class="container">
+    <div class="section-head"><span class="kicker">About Validate Your Idea</span><h2>Turn uncertainty into evidence.</h2><p>I help entrepreneurs test and validate their business ideas by examining the market, customers, competition, assumptions, costs and risks, helping them refine their ideas and make informed decisions before investing significant time and money.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="final">
+  <div class="container">
+    <h2>Is your idea worth pursuing?</h2>
+    <p>Let's put it to the test. Tell me about your idea and identify where validation should begin.</p>
+    <button class="btn btn-primary" onclick="openModal()">Start Validating My Idea →</button>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer"><div><strong>Validate Your Idea</strong><br>Business Idea Validation Coaching</div><div>© <span id="year"></span> Validate Your Idea. All rights reserved.</div></div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modalbox">
+    <button class="close" onclick="closeModal()" aria-label="Close">×</button>
+    <h3>Start validating your idea</h3>
+    <p style="color:#657085">Use this form as the first step. Connect it to your preferred email/form service when you're ready to launch.</p>
+    <form onsubmit="submitForm(event)">
+      <div class="field"><label>Name</label><input required placeholder="Your name"></div>
+      <div class="field"><label>Email</label><input type="email" required placeholder="you@example.com"></div>
+      <div class="field"><label>Tell me about your idea</label><textarea required placeholder="What are you thinking of building?"></textarea></div>
+      <button class="btn btn-primary" type="submit">Send Enquiry →</button>
+    </form>
+  </div>
+</div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function openModal(){document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+function submitForm(e){e.preventDefault();alert('Thanks — your enquiry form is ready to connect to your email or CRM.');closeModal()}
+</script>
+</body>
+</html>
